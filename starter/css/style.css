@@ -21,3 +21,40 @@ h6 {
 p {
   margin: 0;
 }
+
+header {
+  background-color:rgb(30, 30, 30);
+}
+ h1 {
+  background-color: rgb(126, 194, 194);
+  width:25% ;
+  position: relative;
+  /* left: 20px; */
+  top: 10px;
+  text-align: end;
+  padding-right: 8px;
+  
+
+ }
+
+ #navBar {
+  display: flex;
+  flex-direction: row;
+  /* margin: 0px 5%; */
+  
+ }
+
+ #navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* justify-content:space-evenly; */
+  justify-content: flex-end;
+  
+ }
+
+ .hero-banner {
+  display: grid;
+  
+
+ }
