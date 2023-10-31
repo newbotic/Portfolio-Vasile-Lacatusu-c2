@@ -26,8 +26,6 @@ p {
   background-color:rgb(30, 30, 30);
   height:27vh;
   display: flex;
-  /* flex-wrap: wrap; */
-  /* align-items: stretch; */
 
 }
 /* h1 header */
@@ -52,7 +50,8 @@ p {
  #navigation {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  color: aqua;
+  
   
  }
 
@@ -86,45 +85,57 @@ text-decoration: underline;
  .page-wrapper {
   display: grid; 
   grid-template-columns:repeat(3, 1fr);
-  grid-template-rows:2fr 3fr 1fr 1fr 1fr 2fr;
+  grid-template-rows:repeat(9, 1fr);
   margin: 0px 5%;
   grid-gap: 10px;
-  grid-template-areas: 
-  
-  
-  
-  
-} 
+  width: 90%;
+  height: 120vh;
 
-#about {
-  display: flex
-  padding-left: 10px; 
-  grid-column: 2/-1;
-  border-left: 4px solid grey; 
-;
+} 
+#work {
+  display: grid;
+
 }
+
+
+
 #about > h2 {
   grid-column:auto;
   color: rgb(100, 97, 97);
   position: absolute;
   left: 25%;
   text-align: end;
+  
+}
+#about {
+  display: flex
+  padding-left: 20px; 
+  grid-column: 2/-1;
+  border-left: 5px solid grey; 
+  margin: 5px;
 }
 
 #work {
-  grid-column-start: 2;
-  grid-column-end: -1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:2fr 1fr 1fr ;
-  grid-row: 2/3;
-  grid-gap: 10px;
-  grid-template-areas: 
-  "surf surf"
-  "led calculator"
-  "pastel run";
+  display: flex
+  padding-left: 20px; 
+  grid-column: 2/-1;
+  grid-row:4;
+  border-left: 5px solid grey; 
+  margin: 5px;
+
+  
 
 }
+#contact {
+  grid-column: 2/-1;
+  grid-row: 9;
+  display: flex;
+  justify-content: space-around;
+  border-left: 5px solid grey; 
+  margin: 5px;
+
+}
+
   
 
 
@@ -172,22 +183,34 @@ text-decoration: underline;
   text-align: end;
 }
 
-#contact {
-  grid-column: 2/-1;
-  display: flex;
-  justify-content: space-around;
-}
+
 
 #contact > h2 {
   grid-column:auto;
-  color: rgb(100, 97, 97);
   position: absolute;
-  left: 20%;
+  color:rgb(100,97,97);;
+  left: 25%;
   text-align: end;
 }
 
+#work {
+  display: grid; 
+  grid-template-columns:repeat(2, 1fr);
+  grid-template-rows:repeat(5, 1fr);
+  margin: 0px 5%;
+  grid-gap: 10px;
+  width: 90%;
+  height: 120vh;
+  grid-template-areas: 
+  "surf surf"
+  "surf surf"
+  "surf surf"
+  "led calculator"
+  "pastel run";
 
-/* .page-section {
+}
+
+.page-section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -195,6 +218,6 @@ text-decoration: underline;
     cursor: pointer;
     display: grid;
     align-content: end;
-} */
+}
 
 
