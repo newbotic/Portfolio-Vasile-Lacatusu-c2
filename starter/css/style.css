@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -20,119 +20,181 @@ h6 {
 
 p {
   margin: 0;
-} */
+}
 
-header {
+#header-flex {
   background-color:rgb(30, 30, 30);
+  height:27vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* align-items: stretch; */
+
 }
 /* h1 header */
- h1 {
+
+ #header-flex > h1 {
   background-color: rgb(126, 194, 194);
   width:25% ;
-  position: relative;
-  /* left: 20px; */
-  top: 2%;
   text-align:left ;
   padding-right: 8px;
-  
-
+  height: 40%;
+  /* margin-top: 10px; */
+  position: relative;
+  top: 50px;
  }
 
- #navBar {
-  display: flex;
-  flex-direction: row;
-  /* margin: 0px 5%; */
-  
+ #avatar {
+  background-color: bisque;
+  height: 100px;
+  width: 100px;
  }
 
  #navigation {
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
+  flex-direction: row;
+  align-items: end;
   
  }
 
- 
+ #navigation >div {
+color:rgb(126,194,194) ;
+text-decoration: underline;
+ }
 
  .hero-banner {
   display: flex;
-  /* display: grid; */
-  min-height: 200px;
-  margin: 0 auto;
-  height: 25vh;
-  /* grid-template-columns: 1fr 3fr; */
-  /* grid-template-rows: auto; */
-  background-color: antiquewhite;
+  flex-direction: column;
+  height: 35vh;
   background-image: url(../images/02-hero-bg.jpg);
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: end;
+
 }
 
 .hero-banner > div {
   background-color: rgb(126, 194, 194);
-  width:350px ;
-  height: 10%;
-  position:relative;
-  left:200px ;
-  top: 30px;
-  
-  /* left: 1550px;  */
-  /* top: 100px; */
+  width:15em ;
+  height: 27%;
   text-align: left;
   padding-right: 8px;
+  position:relative;
+  right: 0;
+  top: 140px;
 }
 
-/* h2 {
-  width: 350px;
-  height: 25%;
-} */
-
-.page-wrapper {
-  display: grid;
+ .page-wrapper {
+  display: grid; 
   grid-template-columns:repeat(3, 1fr);
-  grid-template-rows:1fr 3fr 1fr;
+  grid-template-rows:2fr 3fr 1fr 1fr 1fr 2fr;
   margin: 0px 5%;
+  grid-gap: 10px;
   grid-template-areas: 
-  "about about about"
-  "work work work"
-  "contact contact contact";
-}
+  
+  
+  
+  
+} 
 
 #about {
-  grid-area: about;
-  background-color: aqua;
- 
-}
-
-#about  {
+  display: flex
+  padding-left: 10px; 
   grid-column: 2/-1;
-  display: flex;
-  border-left: 4px solid grey;
-  margin: 20px;
-
+  border-left: 4px solid grey; 
+;
 }
 #about > h2 {
-  justify-content: center;
-  color: brown;
+  grid-column:auto;
+  color: rgb(100, 97, 97);
   position: absolute;
   left: 25%;
-
-}
-#about > p {
-  justify-content: baseline;
-  padding: 40px;
+  text-align: end;
 }
 
 #work {
-  grid-area: work;
-  background-color: bisque;
   grid-column-start: 2;
   grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:2fr 1fr 1fr ;
+  grid-row: 2/3;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "surf surf"
+  "led calculator"
+  "pastel run";
+
+}
+  
+
+
+#surf-report {
+  grid-area: surf;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#led-wall {
+  grid-area: led;
+  background-image:url(../images/02-portfolio-1.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#calculator {
+  grid-area: calculator;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pastel-puzzle {
+  grid-area: pastel;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#run-buddy {
+  grid-area: run;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#work > h2 {
+  grid-column:auto;
+  color: rgb(100, 97, 97);
+  position: absolute;
+  left: 25%;
+  text-align: end;
 }
 
 #contact {
-  grid-area: contact;
-  background-color: chocolate;
   grid-column: 2/-1;
+  display: flex;
+  justify-content: space-around;
 }
+
+#contact > h2 {
+  grid-column:auto;
+  color: rgb(100, 97, 97);
+  position: absolute;
+  left: 20%;
+  text-align: end;
+}
+
+
+/* .page-section {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+} */
 
 
