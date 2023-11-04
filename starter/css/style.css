@@ -5,7 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -21,203 +22,132 @@ h6 {
 p {
   margin: 0;
 }
+/* header */
 
-#header-flex {
-  background-color:rgb(30, 30, 30);
-  height:27vh;
+.header {
   display: flex;
-
+  background-color: rgb(30, 30, 30);
+  height: 15vh;
+  width: 100%;
+  background-size: cover;
 }
-/* h1 header */
 
- #header-flex > h1 {
-  background-color: rgb(126, 194, 194);
-  width:25% ;
-  text-align:left ;
-  padding-right: 8px;
-  height: 40%;
-  /* margin-top: 10px; */
-  position: relative;
-  top: 50px;
- }
+/* header h1  */
 
- #avatar {
-  background-color: bisque;
-  height: 100px;
-  width: 100px;
- }
-
- #navigation {
+.header-left {
   display: flex;
-  flex-direction: row;
-  color: aqua;
-  
-  
- }
+  width: 50%;
+  background-color: bisque;
+  justify-content: left;
+}
+.header-left > h1 {
+  background-color: aqua;
+  height: 70px;
+  width: 400px;
+  margin-top: 5%;
+}
 
- #navigation >div {
-color:rgb(126,194,194) ;
-text-decoration: underline;
- }
+/* header avatar */
 
- .hero-banner {
+#avatar {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  left: 5%;
+  top: 35%;
+}
+
+/* header nav right*/
+
+.nav-items  {
+  display: flex;
+  width: 50%;
+}
+
+.hero-banner {
   display: flex;
   flex-direction: column;
-  height: 35vh;
+  height: 30vh;
   background-image: url(../images/02-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   align-items: end;
-
 }
 
 .hero-banner > div {
   background-color: rgb(126, 194, 194);
-  width:15em ;
-  height: 27%;
+  width: 15em;
+  height: 17%;
   text-align: left;
   padding-right: 8px;
-  position:relative;
-  right: 0;
-  top: 140px;
+  position: relative;
+  right: 50;
+  top: 75%;
 }
 
- .page-wrapper {
-  display: grid; 
-  grid-template-columns:repeat(3, 1fr);
-  grid-template-rows:repeat(9, 1fr);
-  margin: 0px 5%;
-  grid-gap: 10px;
-  width: 90%;
-  height: 120vh;
 
-} 
+.page-wrapper {
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+  background-color: antiquewhite;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  
+}
+.about-left {
+  color:rgb(49, 49, 118);
+  border-right: 3px solid rgb(49,49, 118);
+  justify-content: end;
+  padding-right: 3%;
+  text-align: end;
+
+}
+.about-right {
+  display: flex;
+  color: rgb(49,49,118);
+  padding-left: 2%;
+  font-size:large;
+
+}
+
+/* work section */
 #work {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
 
 }
 
-
-
-#about > h2 {
-  grid-column:auto;
-  color: rgb(100, 97, 97);
-  position: absolute;
-  left: 25%;
-  text-align: end;
-  
-}
-#about {
-  display: flex
-  padding-left: 20px; 
-  grid-column: 2/-1;
-  border-left: 5px solid grey; 
-  margin: 5px;
-}
-
-#work {
-  display: flex
-  padding-left: 20px; 
-  grid-column: 2/-1;
-  grid-row:4;
-  border-left: 5px solid grey; 
-  margin: 5px;
-
-  
-
-}
-#contact {
-  grid-column: 2/-1;
-  grid-row: 9;
+.work-left {
   display: flex;
-  justify-content: space-around;
-  border-left: 5px solid grey; 
-  margin: 5px;
-
+  justify-content: end;
+  color: rgb(49, 49, 118);
 }
 
+#surf {
   
-
-
-#surf-report {
-  grid-area: surf;
   background-image: url(../images/02-portfolio-4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#led-wall {
-  grid-area: led;
-  background-image:url(../images/02-portfolio-1.jpg) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-#calculator {
-  grid-area: calculator;
-  background-image: url(../images/02-portfolio-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#pastel-puzzle {
-  grid-area: pastel;
-  background-image: url(../images/02-portfolio-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#run-buddy {
-  grid-area: run;
-  background-image: url(../images/02-run-buddy.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#work > h2 {
-  grid-column:auto;
-  color: rgb(100, 97, 97);
-  position: absolute;
-  left: 25%;
-  text-align: end;
-}
-
-
-
-#contact > h2 {
-  grid-column:auto;
-  position: absolute;
-  color:rgb(100,97,97);;
-  left: 25%;
-  text-align: end;
-}
-
-#work {
-  display: grid; 
-  grid-template-columns:repeat(2, 1fr);
-  grid-template-rows:repeat(5, 1fr);
-  margin: 0px 5%;
-  grid-gap: 10px;
-  width: 90%;
-  height: 120vh;
-  grid-template-areas: 
-  "surf surf"
-  "surf surf"
-  "surf surf"
-  "led calculator"
-  "pastel run";
 
 }
+
+
+
 
 .page-section {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    cursor: pointer;
-    display: grid;
-    align-content: end;
-}
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}  
 
 

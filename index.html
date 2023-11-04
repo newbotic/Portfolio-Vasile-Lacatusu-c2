@@ -2,9 +2,9 @@
 <html lang="en-gb">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Vasile Lacatusu Portfolio</title>
   <link rel="stylesheet" href="./starter/css/style.css" />
 </head>
@@ -12,52 +12,77 @@
 <body>
   <!-- main logo / nav -->
 
-  <header id="header-flex">
-    <h1>Vasile Lacatusu</h1>
-    <img  id="avatar" src="./starter/images/avatar.jpg" alt="avatar">
-    <nav >
-      <div id="navigation">
-      <p href="About Me">About Me</p>
-      <p href="">Work</p>
-      <p href="">Contact Me</p>
-      <p href="">Resume</p>
+  <!-- <header id="header-container"> -->
+    <div class="header">
+      <div class="header-left">
+        <h1>Vasile Lacatusu</h1>
+        <img id="avatar" src="./starter/images/avatar.jpg" alt="avatar" />
       </div>
-    </nav>   
-  </header>
+    <!-- <nav id="navigation" class="header-right"> -->
+    <div class="nav-item">
+        <p>><a class="nav-item" href="#work">About Me</a></p>
+        <p><a class="nav-item" href="#">Work</a></li>
+        <p><a class="nav-item" href="">Contact Me</a></p>
+        <p><a class="nav-item" href="">Resume</a></p>
+    </div>
+  </div>
+    <!-- </nav> -->
+  <!-- </header> -->
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
       <h2>Cool subtitle here!</h2>
     </div>
-   </section> 
+  </section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About<br>Me </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut molestias commodi delectus. Quis, assumenda fugiat deserunt suscipit maiores id, quo culpa repellendus reprehenderit voluptatum ipsam magnam dignissimos, doloribus aliquam.</p>
-    </section>
+  <!-- main container -->
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-      <div id="surf-report" class="grid-area"></div>
-      <div id="led-wall" class="grid-area"></div>
-      <div id="calculator" class="grid-area"></div>
-      <div id="pastel-puzzle" class="grid-area"></div>
-      <div id="run-buddy" class="grid-area"></div>
+    <main class="page-wrapper">
+      <!-- about me  section-->
+        <section class="page-section" id="about">
+          <div class="about-left">
+            <h2>About <br>Me</h2>
+          </div>
+          <div class="about-right">
+            <p>
+            Lorem ipsum dolor sit 
+            </p>
+          </div>
+        </section>
+        <!-- end about section -->
 
-    </section>
+      <!-- work section-->
+        <section class="page-section" id="work">
+          <div>
+            <h2 class="work-left">Work</h2>
+          </div>
+          <div id="surf" class="grid-area"></div>
+          <div id="led" class="grid-area"></div>
+          <div id="calculator" class="grid-area"></div>
+          <div id="pastel" class="grid-area"></div>
+          <div id="run" class="grid-area"></div>
+        </section>
 
-    <!-- contact -->
-    <section class="page-section " id="contact">
-      <h2>Contact <br> Me</h2>
-      <a  href="078918975555">0789189</a>
-      <a href="">vasilelacatusu@yahoo.com</a>
-      <a href="https://github.com/newbotic">github</a>
-    </section>
-  </main>
+      <!-- contact section -->
+      <div class="contact-me">
+        <!-- <section class="page-section" id="contact"> -->
+        <div class="h-2">
+          <h2>
+            Contact <br />
+            Me
+          </h2>
+        </div>
+        <div class="links">
+          <a href="078918975555">0789189</a>
+          <a href="">vasilelacatusu@yahoo.com</a>
+          <a href="https://github.com/newbotic">github</a>
+        </div>
+        <!-- </section> -->
+      </div>
+    </main>
+  
+
 </body>
 
 </html>
